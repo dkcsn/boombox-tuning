@@ -1,0 +1,17 @@
+:root {
+  --bg: #111315;
+  --card: #1b1f23;
+  --text: #f2f2f2;
+  --muted: #a8b0b8;
+  --line: #2e343a;
+  --accent: #f0b84f;
+}
+body {margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.hero{padding:72px 24px 48px;background:radial-gradient(circle at top left,#333842,#111315 55%)}
+.hero>div,main{max-width:980px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+.audio-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+audio{width:100%}
+.note{color:var(--muted);border-left:4px solid var(--accent);padding-left:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
