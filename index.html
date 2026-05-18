@@ -1,1 +1,109 @@
-<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Boombox Tuning Guide</title><link rel="stylesheet" href="style.css"></head><body><header class="hero"><div><h1>Boombox Tuning Guide</h1><p>Praktisk tuning af AIYIMA TPA3116 2.1 med 12” SP-302E, 2×8” SP-202E og MPT-55 piezo.</p><p>Bygget med kærlig reference til Bekendt, som hjalp projektet i gang og gjorde det alt for højt.</p></div></header><main><section class="grid"><div class="card"><h2>System</h2><ul><li>12” SP-302E · 76L lukket</li><li>2×8” SP-202E · 12L lukket</li><li>MPT-55 piezo med 0.68uF serie kondensator</li></ul></div><div class="card"><h2>Startpunkt</h2><ul><li>Switch: ON</li><li>Bass FQR: 75-85 Hz</li><li>Bass: lav/middel</li><li>TRE VOL: lav</li><li>TRE: lav/middel</li></ul></div></section><section class="card"><h2>Tuning</h2><ol><li>Start ved 80 Hz.</li><li>Skru Bass op indtil den lige kobler på.</li><li>Brug white noise til TRE VOL.</li><li>Skru ned når toppen bliver skarp.</li><li>Lyt 3-5 meter væk.</li></ol><p class="note">Målet er ikke maksimal bas. Målet er punch, balance og mindre øretræthed.</p></section></main></body></html>
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boombox Tuning Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">TPA3116 2.1 tuning</p>
+      <h1>Boombox Tuning Guide</h1>
+      <p class="lead">Praktisk tuning af 12&quot; bas, 2×8&quot; mellemtoner og MPT-55 piezo i lukket kabinet.</p>
+      <p class="credit">Bygget med kærlig reference til Bekendt, som fik sat projektet i gang og gjort det alt for højt på den gode måde.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Systemet</h2>
+        <table>
+          <tr><th>Del</th><th>Kabinet</th><th>Rolle</th></tr>
+          <tr><td>12&quot; Monacor SP-302E</td><td>76 L lukket</td><td>Bas / punch</td></tr>
+          <tr><td>2×8&quot; Monacor SP-202E</td><td>12 L lukket</td><td>Upper bass / mellemtone</td></tr>
+          <tr><td>Monacor MPT-55 piezo</td><td>0.68 µF serie-kondensator</td><td>Diskant / attack</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Grundidé</h2>
+        <p>Målet er ikke maksimal bas. Målet er stram bas, tydelig vokal og kontrolleret diskant. 12&quot; enheden skal arbejde omkring 75-85 Hz, mens 8&quot; enhederne tager resten.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>AIYIMA TPA3116 board</h2>
+      <img class="board" src="assets/aiyima-tpa3116-board.png" alt="AIYIMA TPA3116 2.1 amplifier board">
+      <div class="controls">
+        <div><strong>BASS</strong><span>Basniveau. Sæt lavt først.</span></div>
+        <div><strong>BASS FQR</strong><span>Sub/bas deling. Start omkring 80 Hz.</span></div>
+        <div><strong>TRE VOL</strong><span>Hvor meget diskant. MPT-55 kræver forsigtighed.</span></div>
+        <div><strong>TRE</strong><span>Hvor langt ned diskanten/presence arbejder.</span></div>
+        <div><strong>VOL</strong><span>Master volume.</span></div>
+        <div><strong>Switch</strong><span>Start ON, hvis den high-passer 8&quot; enhederne.</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Startindstilling</h2>
+      <div class="settings">
+        <div><span>Switch</span><strong>ON</strong></div>
+        <div><span>BASS FQR</span><strong>75-85 Hz</strong></div>
+        <div><span>BASS</span><strong>Lav til middel</strong></div>
+        <div><span>TRE VOL</span><strong>Lav</strong></div>
+        <div><span>TRE</span><strong>Lav til middel</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Lydfiler til tuning</h2>
+      <p>Afspil én fil ad gangen. Justér småt. Lyt både tæt på og 3-5 meter væk.</p>
+
+      <h3>BASS FQR</h3>
+      <div class="audio-list">
+        <label>70 Hz <audio controls src="audio/bass_crossover_70Hz.mp3"></audio></label>
+        <label>80 Hz <audio controls src="audio/bass_crossover_80Hz.mp3"></audio></label>
+        <label>90 Hz <audio controls src="audio/bass_crossover_90Hz.mp3"></audio></label>
+        <label>100 Hz <audio controls src="audio/bass_crossover_100Hz.mp3"></audio></label>
+      </div>
+
+      <p class="note">80 Hz bør være det mest naturlige kompromis. 70 Hz er strammere. 90-100 Hz giver mere punch, men kan blive boomy eller lokaliserbar.</p>
+
+      <h3>TRE / TRE VOL</h3>
+      <div class="audio-list">
+        <label>White noise <audio controls src="audio/white_noise_treble_test.mp3"></audio></label>
+        <label>4 kHz <audio controls src="audio/treble_reference_4000Hz.mp3"></audio></label>
+        <label>6 kHz <audio controls src="audio/treble_reference_6000Hz.mp3"></audio></label>
+        <label>8 kHz <audio controls src="audio/treble_reference_8000Hz.mp3"></audio></label>
+      </div>
+
+      <p class="note">Brug white noise til TRE VOL. Skru op til det bliver skarpt, og gå lidt tilbage. MPT-55 kan hurtigt lyde hård, især hvis TRE arbejder for langt ned i presenceområdet.</p>
+    </section>
+
+    <section class="card">
+      <h2>Tuning-procedure</h2>
+      <ol>
+        <li>Sæt switch ON.</li>
+        <li>Sæt BASS lavt og BASS FQR omkring 80 Hz.</li>
+        <li>Afspil 70, 80, 90 og 100 Hz. Find punktet hvor bassen lyder stram uden at blive lokaliserbar.</li>
+        <li>Spil musik med kick drum og vokal. Hæv BASS indtil bassen lige kobler på.</li>
+        <li>Afspil white noise. Hæv TRE VOL indtil toppen bliver skarp, og skru lidt ned igen.</li>
+        <li>Justér TRE lavt/midt. Hvis vokal bliver nasal eller hård, er TRE for højt.</li>
+        <li>Lyt 3-5 meter væk. Det er dér boomboxen skal vurderes.</li>
+      </ol>
+    </section>
+
+    <section class="card warning">
+      <h2>Reglen</h2>
+      <p>Hvis det lyder imponerende alene på bassen eller diskanten, er det sandsynligvis sat for højt. Det rigtige setup lyder balanceret, kontant og mindre trættende over tid.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Boombox Tuning Guide · GitHub Pages ready</p>
+  </footer>
+</body>
+</html>

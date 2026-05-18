@@ -2,6 +2,14 @@
 
 Static GitHub Pages site for tuning an AIYIMA TPA3116 2.1 amplifier board.
 
+## GitHub Pages
+
+1. Create a new GitHub repository.
+2. Upload these files.
+3. Go to **Settings -> Pages**.
+4. Set source to **Deploy from a branch**.
+5. Select `main` and `/root`.
+
 ## Tuning target
 
 - 12 inch bass in 76 L sealed cabinet
