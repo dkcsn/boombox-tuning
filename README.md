@@ -1,6 +1,7 @@
 # Boombox Tuning Guide
 
 Static GitHub Pages site for tuning an AIYIMA TPA3116 2.1 amplifier board.
+https://dkcsn.github.io/boombox-tuning/
 
 ## Tuning target
 
